@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints/
+build/
+dist/
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
+
+# Generated run outputs (plots/results are reproducible via `python main.py`)
+output/
+
+# Price cache — keep the small committed demo universe so the scan runs offline,
+# ignore anything else pulled live.
+data/*
+!data/universe_AAPL-AMZN-GOOGL-JPM-MSFT-NVDA-TSLA-TSM_2015-01-01_2021-12-31.csv

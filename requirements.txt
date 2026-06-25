@@ -1,0 +1,14 @@
+# Core (required to run the scanner and tests on cached data)
+numpy
+pandas
+matplotlib
+
+# Optional: re-download the universe instead of using the cache.
+# Pin >=0.2 — releases before that break against Yahoo's current API.
+yfinance>=0.2.0
+
+# Optional: Excel export of results
+openpyxl
+
+# Dev
+pytest

@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "momentum-signal-scanner"
+version = "0.1.0"
+description = "A momentum-indicator (RSI/MACD) long/short signal scanner: backtest a universe x strategy grid, ranked by Sharpe."
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = ["numpy", "pandas", "matplotlib"]
+
+[project.optional-dependencies]
+data = ["yfinance"]
+excel = ["openpyxl"]
+dev = ["pytest"]
+
+[tool.setuptools]
+packages = ["scanner"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
