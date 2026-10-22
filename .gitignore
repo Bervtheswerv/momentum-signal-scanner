@@ -12,9 +12,6 @@ dist/
 .vscode/
 .idea/
 
-# Generated run outputs (plots/results are reproducible via `python main.py`)
-output/
-
 # Price cache — keep the small committed demo universe so the scan runs offline,
 # ignore anything else pulled live.
 data/*
